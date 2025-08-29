@@ -1,9 +1,6 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 import '../models/contact_models.dart';
-import '../utils/ImagePickerUtils.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_styles.dart';
 import '../utils/validation.dart';
@@ -69,15 +66,8 @@ class _AddContactBottomSheetState extends State<AddContactBottomSheet> {
                       ? Center(
                     child: GestureDetector(
                       onTap: () async {
-                        File? tempImage =
-                        await ImapePickerUtils.cameraPicker();
-                        if (tempImage != null) {
-                          pickedImage = tempImage;
-                          setState(() {});
-                        }
                       },
                       child: Image.asset('assets/images/image_not_selected.png'),
-                      // child: Lottie.asset(AppAnimations.imagePicker),
                     ),
                   )
                       : ClipRRect(

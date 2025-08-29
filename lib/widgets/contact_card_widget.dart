@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 import '../models/contact_models.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_styles.dart';
-
 
 
 class ContactCardWidget extends StatelessWidget {

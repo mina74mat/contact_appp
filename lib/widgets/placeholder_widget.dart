@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
-
 import '../utils/app_colors.dart';
+
 
 class PlaceholderWidget extends StatelessWidget {
   const PlaceholderWidget({super.key});
@@ -12,7 +11,6 @@ class PlaceholderWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset('assets/images/splash.png'),
-        // Lottie.asset(AppAnimations.emptyList),
         const Text(
           'There is No Contacts Added Here',
           style: TextStyle(

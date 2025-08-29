@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'home/home_screen.dart';
 
 void main() {
@@ -15,7 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute:HomeScreen.routeName,
-      // HomeScreen.routeName,
       routes:{
 
         HomeScreen.routeName: (context)=>HomeScreen(),
